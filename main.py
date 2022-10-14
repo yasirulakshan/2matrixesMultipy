@@ -1,3 +1,9 @@
+
+def convertInt(arr):
+    output = []
+    for number in arr:
+        output.append(int(number))
+    return output
 def readMatrix(file):
     ifValid = True
     lines = file.read().split("\n")
@@ -11,7 +17,7 @@ def readMatrix(file):
         elif prelen != len(elements):
             ifValid = False
             break
-        matrix.append(elements)
+        matrix.append(convertInt(elements))
     if ifValid:
         return matrix
     else:
@@ -27,5 +33,9 @@ if a:
     b = readMatrix(file2)
     file2.close()
     print(b)
+    if b:
+        print("HY")
+    else:
+        print("Invalid Matrix B!!")
 else:
     print("Invalid Matrix A!!")
