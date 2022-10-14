@@ -1,10 +1,11 @@
+#function to convert string list to int list
 def convertInt(arr):
     output = []
     for number in arr:
         output.append(int(number))
     return output
 
-
+#read matrix
 def readMatrix(file):
     ifValid = True
     lines = file.read().split("\n")
