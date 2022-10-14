@@ -1,11 +1,12 @@
-#function to convert string list to int list
+# function to convert string list to int list
 def convertInt(arr):
     output = []
     for number in arr:
         output.append(int(number))
     return output
 
-#read matrix
+
+# read matrix
 def readMatrix(file):
     ifValid = True
     lines = file.read().split("\n")
@@ -53,7 +54,7 @@ if a:
             for r in multi:
                 print(*r)
         else:
-            print("cannot multiply!!")
+            print("Cannot Multiply!!")
     else:
         print("Invalid Matrix B!!")
 else:
